@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Weather Dashboardt</title>
+</head>
+<body>
+    <body class="flex-column min-100-vh">
+        <header class="hero">
+          <h1 class="app-title">Weather Dashboard</h1><br><br>
+          <p>What will your weather be like this week? Search below!
+          </p>
+        </header>
+      
+      
+        <main class="flex-row justify-space-between">
+          <div class="col-12 col-md-4">
+      
+            <div class="card" id="city-search">
+              <h3 class="card-header text-uppercase">Search for a City:</h3>
+              <form id="user-form" class="card-body">
+                <!-- <label class="form-label" for="username"></label> -->
+                <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+                <button type="submit" class="btn">Search</button>
+              </form>
+            </div>
+      
+            <div class="card" id="popular-city">
+              <h3 class="card-header text-uppercase">Search by Popular City:</h3>
+              <div id="language-buttons" class="card-body">
+                <button data-language="Chicago" class="btn">Chicago</button>
+                <button data-language="New York" class="btn">New York</button>
+                <button data-language="Orlando" class="btn">Orlando</button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-md-8">
+            <h2 class="subtitle">Current Temperature:</h2>
+            <div id="current-container" class="list-group">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Location (Date) Icon</h5>
+                      <p class="card-text">Temp</p>
+                      <p class="card-text">Wind</p>
+                      <p class="card-text">Humidity</p>
+                      <p class="card-text">UV Index</p>
+                    </div>
+                  </div>
+
+            </div>
+
+
+            <div id="forecast-container" class="list-group">
+                <h2 class="subtitle">5-Day Forecast:</h2>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Date</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Icon</h6>
+                      <p class="card-text">Temp</p>
+                      <p class="card-text">Wind</p>
+                      <p class="card-text">Humidity</p>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+        </main>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
