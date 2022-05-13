@@ -26,13 +26,15 @@
               <h3 class="card-header text-uppercase">Search for a City:</h3>
               <form id="user-form" class="card-body">
                 <!-- <label class="form-label" for="username"></label> -->
-                <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+                <input name="city" id="search-city" type="text" autofocus="true" class="form-input" />
                 <button type="submit" class="btn">Search</button>
               </form>
             </div>
       
             <div class="card" id="popular-city">
-              <h3 class="card-header text-uppercase">Search by Popular City:</h3>
+                <!-- TODO: Create appending function for recent searches below  -->
+
+              <h3 class="card-header text-uppercase">Search History:</h3>
               <div id="language-buttons" class="card-body">
                 <button data-language="Chicago" class="btn">Chicago</button>
                 <button data-language="New York" class="btn">New York</button>
@@ -43,8 +45,8 @@
       
           <div class="col-12 col-md-8">
             <h2 class="subtitle">Current Temperature:</h2>
-            <div id="current-container" class="list-group">
-                  <div class="card" style="width: 18rem;">
+            <div id="currentCity" class="list-group">
+                  <!-- <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title">Location (Date) Icon</h5>
                       <p class="card-text">Temp</p>
@@ -52,7 +54,7 @@
                       <p class="card-text">Humidity</p>
                       <p class="card-text">UV Index</p>
                     </div>
-                  </div>
+                  </div> -->
 
             </div>
 
